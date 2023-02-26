@@ -25,17 +25,119 @@ body {
         nav #hbo{
             margin-right:auto;
             padding:0;           
+    }
+    #page #menu img{
+        cursor:pointer;
     }    
         
     #page ul li{
         display:inline-block;
+        font-family:'Inter';
+        color:white;
+        margin-right:10px;
 
     }
-    main h1,h2{
-        text-align:center;
+    main{
+        margin-top:100px;
+
     }
-    main form{
+        main h1,h2{
+            text-align:center;
+        }
+        main h2{
+            font-weight:400;
+            font-size:20px;
+        }
+        main form{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+        main form label{
+            margin-right:270px;
+            font-size:25px;
+            margin-bottom:10px;
+            margin-top:20px;
+        }
+        
+        main form input::placeholder{
+            color: rgba(255, 255, 255, 0.507);
+            font-family:'Inter';
+            padding-left:5px;
+            font-size:15px;
+            margin:0;
+            padding-top:5px;
+        }
+
+        main form input[value="Entrar"]{
+            font-family:'Inter';
+            font-weight:400;
+            font-size:25px;
+
+        }
+        main form input[type="submit"]{
+            margin-top:30px;
+            width:170px;
+            height:40px;
+            background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            cursor:pointer;
+            margin-bottom:40px;
+        }
+        main form input:hover[type="submit"]{
+            border:10px;    
+            
+        }
+        main form input:hover[value="Entrar"]{
+            color: rgba(238, 238, 238, 0.952);
+            
+        }
+        main form input[type="email"]{
+            padding-left:30px;
+            color:white;
+            font-family:'Inter';
+        }
+        main form input[type="password"]{
+            padding-left:30px;
+            color:white;
+            font-family:'Inter';
+        }
+
+
+
+    main #botao{
         display:flex;
-        flex-direction:column;
-        align-items:center;
+        background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+        width:300px;
+        height:40px;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        cursor:pointer;
+        margin-top:20px;
     }
+    main #botao:hover{
+        border:10px;
+    }
+    main #botao a:hover{
+        color:white;
+    }
+
+    main #botao a{
+        font-family:'Inter';
+        font-size:25px;
+        color: black;
+        margin-left:20px;
+        margin-top:5px;
+    }    
+
+    .botao-cadastro {
+        background: rgba(127, 127, 127, 0.75);
+        border-radius: 85px;
+        border:0;
+        width:360px;
+        height:40px;
+    }
+
